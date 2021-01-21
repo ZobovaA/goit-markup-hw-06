@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zobova-hw-0</title>
+    <title>Zobova-hw-06</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -434,6 +434,41 @@
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden"><div class="modal">
+      <form class="form" name="order">
+        <div class="form-group"> 
+        <p class="contact-details">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="username field">
+        <label>
+         <div class="name">Имя</div> 
+        
+          <input name="username" class="input"/>
+
+            
+
+        </label>
+        </div>
+        <label>
+          <div class="name">Телефон</div> 
+          <input type ="tel" name= "tel" class="input"/>
+        </label>
+        <label>
+          <div class="email name">Почта</div> 
+          <input type ="email" name= "email" class="input"/>
+        </label>
+        <label>
+          <div class="name">Комментарий</div>
+          <textarea class="comments"name="comments" rows="5" placeholder="Введите текст"></textarea>
+        </label>
+        <label>
+        <div class="check">
+        <input type="checkbox" class="input"/>
+        <p classs="chek-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+      </div>  
+      </label> 
+          
+      <button class="button-modal" type="submit">Отправить</button>
+      </div>
+      </form>
       <button class="button-close" data-modal-close >
         <svg class="icon-close">
           <use href="./images/symbol-defs.svg#icon-close-black"></use>
