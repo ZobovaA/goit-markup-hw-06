@@ -431,6 +431,24 @@
             </li>
           </ul>
         </div>
+        <!--Подписка-->
+        
+        <div class="subscribe-container">
+          <p class="subscribe-text">Подпишитесь на рассылку</p>
+          <form>
+            <label>
+              <div class="form-footer">
+              <input class="footer-input" type="email" name="email" placeholder="E-mail">
+            
+              <button class="button-f">Подписаться</button>
+              <svg class="icon-send">
+                <use href="./images/symbol-defs.svg#icon-icon-send"></use>
+              </svg>
+           
+            </div>
+            </label>
+
+        </div>
       </div>
     </footer>
     <div data-modal class="backdrop is-hidden"><div class="modal">
@@ -479,10 +497,15 @@
           <div class="name">Комментарий</div>
           <textarea class="comments"name="comments" rows="5" placeholder="Введите текст"></textarea>
         </label>
-        <label>
+        <label class=label>
         <div class="check">
-        <input type="checkbox" class="input"/>
-        <p classs="chek-text">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></p>
+        <input type="checkbox" class="input old-check visually-hidden" />
+        <div class="check-boxing">
+          <svg class="check-icon">
+            <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+          </svg>
+        </div>
+        <p classs="chek-text"><span class="check-text">Соглашаюсь с рассылкой и принимаю</span> <a class="modal-link" href="">Условия договора</a></p>
       </div>  
       </label> 
           
