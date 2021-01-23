@@ -433,7 +433,8 @@ header {
 .contacts-footer {
   text-decoration: none;
   font-style: normal;
-  color: var(--secondary-fonts-color);
+  color: rgba(255, 255, 255, 0.6);
+  /* color: var(--secondary-fonts-color); */
   font-family: "Roboto", sans-serif;
   margin-top: 9px;
   font-size: 14px;
