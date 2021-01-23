@@ -498,7 +498,6 @@ margin-bottom: 20px;
 }
 
 .button-f{
-  position: relative;
   height: 50px;
   width: 200px;
   background-color: var(--accent-color);
@@ -514,11 +513,18 @@ margin-bottom: 20px;
 
 }
 
+.send-position{
+  position: relative;
+}
+
 .icon-send{
   position: absolute;
   width: 24px;
   height: 24px;
   fill: currentColor;
+  margin-left: -54px;
+  transform: translateY(50%);
+  
   }
 
 
@@ -883,9 +889,27 @@ width: 100%;
 
 .comments{
 border: 1px solid rgba(33, 33, 33, 0.2);
-box-sizing: border-box;
 border-radius: 4px;
 padding: 12px 16px;
+font-size: 12px;
+line-height: 1.16;
+letter-spacing: 0.01em;
+color: darkblue;
+
+/* color: rgba(117, 117, 117, 0.5);; */
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: rgba(117, 117, 117, 0.5);
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: rgba(117, 117, 117, 0.5);
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:  rgba(117, 117, 117, 0.5);
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .comments:focus{
@@ -964,15 +988,8 @@ margin-right: 8px;
 
 .old-check:checked~.check-icon{
   background-color: var(--accent-color);
-  
+   
 }
-
-.check-icon:checked{
-
-  outline: none;
-  border: none;
-}
-
 
 .check-icon{
   width: 16px;
@@ -1050,9 +1067,13 @@ margin-bottom: 12px;
   cursor: pointer;
 }
 .icon-close {
-  width: 11px;
-  height: 11px;
+  width: 18px;
+  height: 18px;
   fill:currentColor;
+}
+
+.button-close:hover{
+color: var(--accent-color);
 }
 
 
