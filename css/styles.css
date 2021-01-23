@@ -498,6 +498,7 @@ margin-bottom: 20px;
 }
 
 .button-f{
+  position: relative;
   height: 50px;
   width: 200px;
   background-color: var(--accent-color);
@@ -514,6 +515,7 @@ margin-bottom: 20px;
 }
 
 .icon-send{
+  position: absolute;
   width: 24px;
   height: 24px;
   fill: currentColor;
@@ -926,6 +928,10 @@ transform: translateY(-50%);
   border-color: var(--accent-color);
 }
 
+.input:focus~.input-img{
+  fill: var(--accent-color);
+}
+
 .old-check{
   width: 16px;
   height: 15px;
@@ -958,7 +964,15 @@ margin-right: 8px;
 
 .old-check:checked~.check-icon{
   background-color: var(--accent-color);
+  
 }
+
+.check-icon:checked{
+
+  outline: none;
+  border: none;
+}
+
 
 .check-icon{
   width: 16px;
