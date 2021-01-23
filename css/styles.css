@@ -496,6 +496,7 @@ margin-bottom: 20px;
  height: 50px;
  padding: 15px 18px;
  margin-right: 12px;
+ color: var(--sec-background-color);
 }
 
 .button-f{
